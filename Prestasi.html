@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestasi Pemerintahan Jokowi & JK (2014-2019)</title>
+    <style>
+       /* Animasi Muncul dari Bawah */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animasi Hover */
+@keyframes glowEffect {
+    0% {
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+    }
+    100% {
+        box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
+    }
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Gambar */
+img {
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+    height: auto;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-in-out forwards;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    border-bottom: 2px solid #555;
+    padding-bottom: 10px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Card Section */
+.section {
+    padding: 15px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background-color: #222;
+    text-align: left;
+    opacity: 0;
+    animation: fadeInUp 1.2s ease-in-out forwards;
+}
+.btn-kembali {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #3a3938;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-kembali:hover {
+    background-color: #8a8783;
+    transform: scale(1.05);
+}
+
+.btn-kembali:active {
+    transform: scale(0.95);
+}
+
+/* Subjudul */
+h2 {
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-bottom: 5px;
+}
+
+/* List */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li::before {
+    content: "✔ ";
+    color: #00ff00;
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Gambar Logo -->
+    <img src="img/garuda.jpeg" alt="Deskripsi Gambar">
+    <a href="home.html" class="btn-kembali">← Kembali</a>
+
+    <!-- Kontainer Konten -->
+    <div class="container">
+        <h1>Prestasi Pemerintahan Presiden Joko Widodo & Jusuf Kalla (2014-2019)</h1>
+
+        <div class="section">
+            <h2>Pembangunan Infrastruktur Besar-besaran</h2>
+            <p>Pemerintah Jokowi-JK melakukan percepatan pembangunan infrastruktur untuk meningkatkan konektivitas dan mendorong pertumbuhan ekonomi.</p>
+            <ul>
+                <li>Penyelesaian Tol Trans-Jawa sepanjang ±1.167 km</li>
+                <li>Pembangunan Tol Trans-Sumatra, dengan target 2.800 km</li>
+                <li>Percepatan pembangunan jalan di Papua, Kalimantan, dan Sulawesi</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Pertumbuhan Ekonomi & Reformasi Birokrasi</h2>
+            <ul>
+                <li>Indonesia naik dalam peringkat Ease of Doing Business dari 120 ke 73</li>
+                <li>Program Listrik 35.000 MW untuk mendukung industri</li>
+                <li>Lahirnya startup Unicorn: Gojek, Tokopedia, Bukalapak, Traveloka</li>
+                <li>Meningkatkan ekspor dan penguatan industri lokal</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Program Kesejahteraan Sosial & Pengentasan Kemiskinan</h2>
+            <ul>
+                <li>Kartu Indonesia Sehat (KIS): 96 juta penerima</li>
+                <li>Kartu Indonesia Pintar (KIP): 18 juta siswa terbantu</li>
+                <li>Dana Desa meningkat dari Rp20,7 triliun menjadi Rp70 triliun</li>
+                <li>Program Keluarga Harapan (PKH): bantuan untuk 10 juta keluarga</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Prestasi di Kancah Internasional</h2>
+            <ul>
+                <li>Asian Games 2018: peringkat ke-4 terbaik sepanjang sejarah</li>
+                <li>Pertemuan IMF-World Bank 2018 di Bali</li>
+                <li>Meningkatkan diplomasi ekonomi dengan berbagai negara</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
